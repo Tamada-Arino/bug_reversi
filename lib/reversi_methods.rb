@@ -18,9 +18,9 @@ module ReversiMethods
   end
 
   def output(board)
-    puts "  #{Position::COL.join(' ')}"
+    puts "  #{Position::ROW.join(' ')}"
     board.each_with_index do |row, i|
-      print Position::ROW[i]
+      print Position::COL[i]
       row.each do |cell|
         case cell
         when WHITE_STONE then print ' ○'
